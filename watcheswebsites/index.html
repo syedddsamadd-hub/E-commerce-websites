@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless-horizon</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css2/footer.css">
+  <link rel="stylesheet" href="css2/nav.css">
+  <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+  <style>
+    
+    .hero-img{
+      position: relative;
+      top: 50px;
+      margin-bottom: 50px;
+    }
+.hero-img img {
+  opacity: 0;
+  transform: translateY(50px) scale(1.1);
+  animation: heroAnimation 2s ease-out forwards;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+/* hover effect */
+.hero-img img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  filter: brightness(1.1);
+}
+
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+    .section1 h1{
+        text-transform: capitalize;
+        color: rgb(9,10,14);
+        /* color: aliceblue; */
+        font-size: 40px;
+        font-weight: bolder;       
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+        font-weight: bold;
+       }
+        
+.section1 h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px; /* underline thoda neeche */
+  width: 100%;
+  height: 4px; /* underline ki motai */
+  background: linear-gradient(90deg, navy,orange,violet); /* acha gradient underline */
+  border-radius: 2px; 
+}
+       .section1 h1:hover{
+         color: navy;
+       }
+       .col{
+        background-color: rgb(255,255,255);
+        transition: all 0.3s ease-in-out; /* smooth transition */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* normal shadow */
+        border-radius: 10px; /* halka rounded corner optional */
+        height: 370px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        }
+     
+       .col:hover {
+        transform: translateY(-8px); /* thoda upar uth jaye */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* hover par gehra shadow */
+         }
+       .col img{
+        width: 100%;
+        height: 300px;
+        border-radius: 5px 5px 0 0;
+       }
+
+</style>
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Timeless Horizon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="best.html">Best Selling</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Watches
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="mens.html">Men's</a></li>
+            <li><a class="dropdown-item" href="womens.html">Women's</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="couples.html">Couples</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html" tabindex="-1" aria-disabled="true">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-0">
+    <div class="hero-img col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <img width="100%" src="images1/hero1.jpg" alt="">
+    </div>
+</div>
+<div class="section1 text-center m-5">
+     <h1>men's watches</h1>
+    </div>
+    <div id="con1" class="container-fluid">
+      <div id="row1" class="row">
+      </div>
+    </div>
+    <div class="section1 text-center m-5">
+     <h1>women's watches</h1>
+    </div>
+    <div id="con2" class="container-fluid">
+      <div id="row2" class="row">
+      </div>
+    </div>
+    <div class="section1 text-center m-5">
+     <h1>couples watches</h1>
+    </div>
+    <div id="con3" class="container-fluid">
+      <div id="row3" class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img  src="images1/couple1.png" alt="">
+          <button class="btn text-dark btn-outline-primary fw-bolder block ms-3 mt-2  ">visit more..</button>
+        </div>
+        </div>
+        <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img  src="images1/couple2.avif " alt="">
+          <button class="btn text-dark btn-outline-primary fw-bolder  block ms-3 mt-2 ">visit more..</button>
+        </div>
+        </div>
+        <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img  src="images1/couple3.avif" alt="">
+          <button class="btn text-dark btn-outline-primary fw-bolder block ms-3 mt-2 ">visit more..</button>
+        </div>
+        </div>
+        <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img  src="images1/couple4.avif" alt="">
+          <button class="btn text-dark btn-outline-primary fw-bolder  block ms-3 mt-2 ">visit more..</button>
+        </div>
+        </div>
+      </div>
+    </div>
+      <footer class="footer">
+    <div class="footer-container">
+
+      <!-- <div class="footer-box">
+        <h2></h2>
+        <p>
+          Connecting students with campus events, opportunities, and updates
+          in real-time. Stay informed, stay involved.
+        </p>
+      </div> -->
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mens.html">men's watches</a></li>
+          <li><a href="women.html">women's watches</a></li>
+          <li><a href="couples.html">couples</a></li>
+          <li><a href="contact us.html">contact us</a></li>
+          <li><a href="sign.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> timelesshorizon@.edu</p>
+        <p><i class="fas fa-phone"></i> +92 03160260319</p>
+        <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/?_rdr" aria-label="Facebook">
+            <img style="border-radius: 100px;"
+              src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo"
+              width="25" alt="Facebook">
+          </a>
+          <a target="_blank" href="https://x.com/" aria-label="Twitter">
+            <img style="border-radius: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3X0LHh-DqOD8MPrmr8K0XtCnIH6ftjqFQw&s"
+              width="25" alt="Twitter">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram">
+            <img style="border-radius: 100px;"
+              src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLmpwZw.jpg"
+              width="25" alt="Instagram">
+          </a>
+          <a target="_blank" href="https://pk.linkedin.com/" aria-label="LinkedIn">
+            <img style="border-radius: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"  width="25"
+              alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="js2/jquery.js"></script>
+<script>
+  let product= [
+  {
+    img: "chain1.jpg",
+    btn: "visit more.."
+  },
+  {
+    img: "leather2.jpg",
+    btn: "visit more.."
+  },
+  {
+    img: "chain6.png",
+    btn: "visit more.."
+  },
+  {
+    img: "leather4.jpg",
+    btn: "visit more.."
+  }
+];
+
+document.addEventListener("scroll",function(){
+  let card="";
+  product.forEach(i => {
+    card+=`
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img src="images1/${i.img}" alt="">
+          <a href="mens.html"><button class="btn text-dark btn-outline-primary fw-bolder block ms-3 mt-2 ">${i.btn}</button></a>
+        </div>
+   </div>
+    `
+
+  });
+      let row=document.getElementById("row1").innerHTML=card;
+});
+
+let womensProducts = [
+  {
+    img: "girl5.jpeg",
+    btn: "visit more.."
+  },
+  {
+    img: "girl6.jpeg",
+    btn: "visit more.."
+  },
+  {
+    img: "girl9.jpeg",
+    btn: "visit more.."
+  },
+  {
+    img: "girl8.jpeg",
+    btn: "visit more.."
+  }
+];
+ 
+document.addEventListener("scroll",function(){
+ let card2="";
+
+  womensProducts.forEach(a => {
+    card2+=`
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img  src="images1/${a.img}" alt="">
+          <button class="btn text-dark btn-outline-primary fw-bolder block ms-3 mt-2">${a.btn}</button>
+        </div>
+        </div>
+    `
+  });
+      let row2=document.getElementById("row2").innerHTML=card2;
+});
+
+let coupleProducts = [
+  {
+    img: "couple1.png",
+    btn: "visit more.."
+  },
+  {
+    img: "couple2.avif",
+    btn: "visit more.."
+  },
+  {
+    img: "couple3.avif",
+    btn: "visit more.."
+  },
+  {
+    img: "couple4.avif",
+    btn: "visit more.."
+  }
+];
+
+document.addEventListener("scroll",function(){
+  let card="";
+  coupleProducts.forEach(e => {
+    card+=`
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col mx-2">
+          <img src="images1/${e.img}" alt="">
+          <a href="mens.html"><button class="btn text-dark btn-outline-primary fw-bolder block ms-3 mt-2 ">${e.btn}</button></a>
+        </div>
+   </div>
+    `
+  
+  });
+    let row=document.getElementById("row3").innerHTML=card;
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless-horizon/couples</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css2/footer.css">
+    <link rel="stylesheet" href="css2/nav.css">
+    <style>
+         .hero-img{
+      position: relative;
+      top: 50px;
+      margin-bottom: 100px;
+    }
+.hero-img img {
+  opacity: 0;
+  transform: translateY(50px) scale(1.1);
+  animation: heroAnimation 2s ease-out forwards;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+/* hover effect */
+.hero-img img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  filter: brightness(1.1);
+}
+
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+    .col{
+        background-color: rgb(255,255,255);
+        transition: all 0.3s ease-in-out; /* smooth transition */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* normal shadow */
+        border-radius: 10px; /* halka rounded corner optional */
+        height: 510px;
+        /* padding: 5px; */
+        margin: 20px 0px;
+        }
+     
+       .col:hover {
+        transform: translateY(-8px); /* thoda upar uth jaye */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* hover par gehra shadow */
+         }
+       .col img{
+        width: 100%;
+        height: 300px;
+       }
+       .col img:hover{
+        opacity: 0.5;
+       }
+       .col p{
+        text-align: center;
+        overflow: hidden;
+        padding: 3px;
+        font-weight: 600;
+        word-spacing: 0;
+       }
+       .col i{
+          /* margin-top: 5px; */
+        /* margin-bottom: 5px; */
+        color: red;
+        font-size: 20px;
+        text-decoration: line-through;
+        display: block;
+        text-align: center;
+       }
+       .col b{
+        font-size: 24px;
+        /* margin-top: 5px; */
+        /* margin-bottom: 5px; */
+        display: block;
+        color: navy;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Timeless Horizon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="best.html">Best Selling</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Watches
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="mens.html">Men's</a></li>
+            <li><a class="dropdown-item" href="womens.html">Women's</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="couples.html">Couples</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html" tabindex="-1" aria-disabled="true">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid w-100 p-0">
+    <div class="hero-img col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <img width="100%" src="images1/couplebanner.png" alt="">
+    </div>
+</div>
+ <div class="container-fluid ">
+      <div id="couple" class="row">
+       
+        </div>
+    </div>
+      <div id="con" class="container-fluid d-none">
+      <div class="row" id="row1">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/chain1.jpg" alt="">
+          <p>Silver metal chain watch with glossy finish</p>
+          <i>PKR 5,999</i>
+          <b>PKR 4,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/leather2.jpg" alt="">
+          <p>Elegant black leather watch for daily and formal wear</p>
+          <i>PKR 4,500</i>
+          <b>PKR 3,999</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/chain6.png" alt="">
+          <p>Premium silver chain smartwatch with Bluetooth calling </p>
+          <i>PKR 9,000</i>
+          <b>PKR 6,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/leather4.jpg" alt="">
+          <p>Classic brown leather strap with minimalist dial</p>
+          <i> PKR 5,499</i>
+          <b> PKR 3,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="con1" class="container-fluid d-none">
+      <div class="row" id="row1">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/chain1.jpg" alt="">
+          <p>Silver metal chain watch with glossy finish</p>
+          <i>PKR 5,999</i>
+          <b>PKR 4,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/leather2.jpg" alt="">
+          <p>Elegant black leather watch for daily and formal wear</p>
+          <i>PKR 4,500</i>
+          <b>PKR 3,999</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/chain6.png" alt="">
+          <p>Premium silver chain smartwatch with Bluetooth calling </p>
+          <i>PKR 9,000</i>
+          <b>PKR 6,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/leather4.jpg" alt="">
+          <p>Classic brown leather strap with minimalist dial</p>
+          <i> PKR 5,499</i>
+          <b> PKR 3,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  <button id="btn8" class="btn btn-outline-primary btn-lg d-block mx-auto" style="background-color: #0f172a;">Load more..</button> 
+    <footer class="footer">
+    <div class="footer-container">
+
+      <!-- <div class="footer-box">
+        <h2></h2>
+        <p>
+          Connecting students with campus events, opportunities, and updates
+          in real-time. Stay informed, stay involved.
+        </p>
+      </div> -->
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mens.html">men's watches</a></li>
+          <li><a href="women.html">women's watches</a></li>
+          <li><a href="couples.html">couples</a></li>
+          <li><a href="contact us.html">contact us</a></li>
+          <li><a href="sign.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> timelesshorizon@.edu</p>
+        <p><i class="fas fa-phone"></i> +92 03160260319</p>
+        <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/?_rdr" aria-label="Facebook">
+            <img style="border-radius: 100px;"
+              src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo"
+              width="25" alt="Facebook">
+          </a>
+          <a target="_blank" href="https://x.com/" aria-label="Twitter">
+            <img style="border-radius: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3X0LHh-DqOD8MPrmr8K0XtCnIH6ftjqFQw&s"
+              width="25" alt="Twitter">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram">
+            <img style="border-radius: 100px;"
+              src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLmpwZw.jpg"
+              width="25" alt="Instagram">
+          </a>
+          <a target="_blank" href="https://pk.linkedin.com/" aria-label="LinkedIn">
+            <img style="border-radius: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"  width="25"
+              alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+    </div>
+  </footer>
+   <!-- script start -->
+ <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="js2/jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#btn8").click(function(){     
+      $("#con").fadeIn(1000).removeClass("d-none")
+      $(this).click(function(){
+         $("#con1").fadeIn(1000).removeClass("d-none") 
+         $("#btn8").fadeOut(2000).addClass("d-none")
+      })
+        
+    })
+  })
+</script>
+<script>
+let couplesProducts = [
+  {
+    img: "couple7.webp",
+    para: "Elegant gold strap couple watch with matching round dials",
+    ital: "PKR 15,999",
+    bold: "PKR 13,500",
+    btn: "add to cart"
+  },
+  {
+    img: "couples18.png",
+    para: "Purple dial couple watches with rose gold chain, unique style",
+    ital: "PKR 12,499",
+    bold: "PKR 11,499",
+    btn: "add to cart"
+  },
+  {
+    img: "couples9.jpeg",
+    para: "Black and silver stainless steel couple watches with rectangular dials",
+    ital: "PKR 11,000",
+    bold: "PKR 8,999",
+    btn: "add to cart"
+  },
+  {
+    img: "couples19.png",
+    para: "White color couple watches with soft leather straps and silver casing modern design",
+    ital: "PKR 9,499",
+    bold: "PKR 7,499",
+    btn: "add to cart"
+  },
+  {
+    img: "couples20.png",
+    para: "Navy blue couple watches with steel chain straps stylish and sleek",
+    ital: "PKR 10,999",
+    bold: "PKR 8,999",
+    btn: "add to cart"
+  },
+  {
+    img: "couples22.png",
+    para: "Emerald green couple watches with silver accents, luxury theme",
+    ital: "PKR 12,999",
+    bold: "PKR 11,499",
+    btn: "add to cart"
+  },
+  {
+    img: "couples13.jpeg",
+    para: "Black leather couple watches with minimalist matte black dials",
+    ital: "PKR 3,900",
+    bold: "PKR 2,999",
+    btn: "add to cart"
+  },
+  {
+    img: "couples25.jpeg",
+    para: "Red couple watches with heart-shaped dials and metallic straps romantic design",
+    ital: "PKR 13,399",
+    bold: "PKR 12,499",
+    btn: "add to cart"
+  },
+  {
+    img: "couples23.png",
+    para: "Gunmetal grey couple watches with mesh straps and chronograph dials",
+    ital: "PKR 13,799",
+    bold: "PKR 12,999",
+    btn: "add to cart"
+  },
+  {
+    img: "couples16.png",
+    para: "Stylish brown leather watch with a matching brown dial and bold look",
+    ital: "PKR 3,299",
+    bold: "PKR 2,299",
+    btn: "add to cart"
+  },
+  {
+    img: "couples17.png",
+    para: "Silver couple watches with dual-tone straps silver and gold elegant design",
+    ital: "PKR 11,999",
+    bold: "PKR 10,999",
+    btn: "add to cart"
+  },
+  {
+    img: "couples21.png",
+    para: "Bracelet style watch with brilliant work and modern look",
+    ital: "PKR 2,000",
+    bold: "PKR 1,599",
+    btn: "add to cart"
+  }
+];
+  document.addEventListener("DOMContentLoaded",function(){
+  let coup="";
+  couplesProducts.forEach(c => {
+    coup+=`
+     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+        <div class="col">
+          <img src="images1/${c.img}" alt="">
+          <p>${c.para}</p>
+          <i>${c.ital}</i>
+          <b>${c.bold}</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">${c.btn}</button>
+       </div>
+    </div>
+    `
+  });
+    let couple=document.getElementById("couple").innerHTML=coup;
+});
+</script>
+</body>
+</html>

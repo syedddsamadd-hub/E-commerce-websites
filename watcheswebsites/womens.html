@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless-horizon/Womens</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css2/nav.css">
+  <link rel="stylesheet" href="css2/footer.css">
+  <style>
+        .hero-img{
+      position: relative;
+      width: 100vw;
+      top: 55px;
+      margin-bottom: 100px;
+    }
+.hero-img img {
+  opacity: 0;
+  transform: translateY(50px) scale(1.1);
+  animation: heroAnimation 2s ease-out forwards;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 25px rgba(58, 22, 22, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+/* hover effect */
+.hero-img img:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  filter: brightness(1.1);
+}
+
+@keyframes heroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+    .col{
+        background-color: rgb(255,255,255);
+        transition: all 0.3s ease-in-out; /* smooth transition */
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* normal shadow */
+        border-radius: 10px; /* halka rounded corner optional */
+        height: 510px;
+        padding: 5px;
+        margin: 20px 0;
+        }
+     
+       .col:hover {
+        transform: translateY(-8px); /* thoda upar uth jaye */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* hover par gehra shadow */
+         }
+       .col img{
+        width: 100%;
+        height: 300px;
+       }
+       .col img:hover{
+         opacity: 0.5;
+       }
+       .col p{
+        text-align: center;
+        overflow: hidden;
+        padding: 3px;
+        font-weight: 600;
+       }
+       .col i{
+          /* margin-top: 5px; */
+        /* margin-bottom: 5px; */
+        color: red;
+        font-size: 20px;
+        text-decoration: line-through;
+        display: block;
+        text-align: center;
+       }
+       .col b{
+        font-size: 24px;
+        /* margin-top: 5px; */
+        /* margin-bottom: 5px; */
+        display: block;
+        color: navy;
+        text-align: center;
+       }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Timeless Horizon</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="best.html">Best Selling</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Watches
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="mens.html">Men's</a></li>
+            <li><a class="dropdown-item" href="womens.html">Women's</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="couples.html">Couples</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+<a id="play" class="nav-link active" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</a>
+       </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-0">
+    <div class="hero-img col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <img width="100%" src="images1/women2.jpeg" alt="">
+    </div>
+</div>
+ <div class="container-fluid ">
+      <div id="women" class="row">
+        
+        </div>
+    </div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btn1" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>   -->
+    <div id="con" class="container-fluid d-none">
+      <div class="row" id="row1">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/chain1.jpg" alt="">
+          <p>Silver metal chain watch with glossy finish</p>
+          <i>PKR 5,999</i>
+          <b>PKR 4,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/leather2.jpg" alt="">
+          <p>Elegant black leather watch for daily and formal wear</p>
+          <i>PKR 4,500</i>
+          <b>PKR 3,999</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/chain6.png" alt="">
+          <p>Premium silver chain smartwatch with Bluetooth calling </p>
+          <i>PKR 9,000</i>
+          <b>PKR 6,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/leather4.jpg" alt="">
+          <p>Classic brown leather strap with minimalist dial</p>
+          <i> PKR 5,499</i>
+          <b> PKR 3,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="con1" class="container-fluid d-none">
+      <div class="row" id="row1">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/chain1.jpg" alt="">
+          <p>Silver metal chain watch with glossy finish</p>
+          <i>PKR 5,999</i>
+          <b>PKR 4,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+          <div class="col">
+          <img  src="images1/leather2.jpg" alt="">
+          <p>Elegant black leather watch for daily and formal wear</p>
+          <i>PKR 4,500</i>
+          <b>PKR 3,999</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/chain6.png" alt="">
+          <p>Premium silver chain smartwatch with Bluetooth calling </p>
+          <i>PKR 9,000</i>
+          <b>PKR 6,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="col">
+          <img  src="images1/leather4.jpg" alt="">
+          <p>Classic brown leather strap with minimalist dial</p>
+          <i> PKR 5,499</i>
+          <b> PKR 3,499</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">add to cart</button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <button id="btn8" class="btn btn-outline-primary btn-lg d-block mx-auto" style="background-color: #0f172a;">Load more..</button>
+    <footer class="footer">
+    <div class="footer-container">
+
+      <!-- <div class="footer-box">
+        <h2></h2>
+        <p>
+          Connecting students with campus events, opportunities, and updates
+          in real-time. Stay informed, stay involved.
+        </p>
+      </div> -->
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mens.html">men's watches</a></li>
+          <li><a href="women.html">women's watches</a></li>
+          <li><a href="couples.html">couples</a></li>
+          <li><a href="contact us.html">contact us</a></li>
+          <li><a href="sign.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p><i class="fas fa-envelope"></i> timelesshorizon@.edu</p>
+        <p><i class="fas fa-phone"></i> +92 03160260319</p>
+        <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a target="_blank" href="https://www.facebook.com/?_rdr" aria-label="Facebook">
+            <img style="border-radius: 100px;"
+              src="https://play-lh.googleusercontent.com/KCMTYuiTrKom4Vyf0G4foetVOwhKWzNbHWumV73IXexAIy5TTgZipL52WTt8ICL-oIo"
+              width="25" alt="Facebook">
+          </a>
+          <a target="_blank" href="https://x.com/" aria-label="Twitter">
+            <img style="border-radius: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3X0LHh-DqOD8MPrmr8K0XtCnIH6ftjqFQw&s"
+              width="25" alt="Twitter">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram">
+            <img style="border-radius: 100px;"
+              src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzLW5lb24tMDAzLmpwZw.jpg"
+              width="25" alt="Instagram">
+          </a>
+          <a target="_blank" href="https://pk.linkedin.com/" aria-label="LinkedIn">
+            <img style="border-radius: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"  width="25"
+              alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+    </div>
+  </footer>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="js2/jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#play").click(function(){
+        $(".modal").slideDown(1000)
+    })
+    $("#btn1").click(function(){
+      $(".modal").slideUp(1500)
+    })
+})
+$(document).ready(function(){
+    $("#btn8").click(function(){     
+      $("#con").fadeIn(1000).removeClass("d-none")
+      $(this).click(function(){
+         $("#con1").fadeIn(1000).removeClass("d-none") 
+         $("#btn8").fadeOut(2000).addClass("d-none")
+      }); 
+    });
+  });
+
+</script>
+<script>
+  let womensProducts = [
+  {
+    img: "girl21.png",
+    para: "Luxury red leather ladies watch round face",
+    ital: "PKR 1,899",
+    bold: "PKR 1,299",
+    btn: "add to cart"
+  },
+  {
+    img: "girl22.jpeg",
+    para: "Gold chain wristwatch for girls",
+    ital: "PKR 750",
+    bold: "PKR 499",
+    btn: "add to cart"
+  },
+  {
+    img: "girl9.jpeg",
+    para: "Rose color bracelet style watches for girls",
+    ital: "PKR 1,799",
+    bold: "PKR 1,499",
+    btn: "add to cart"
+  },
+  {
+    img: "girl8.jpeg",
+    para: "Gold metal women’s wristwatch with round dial",
+    ital: "PKR 1,599",
+    bold: "PKR 999",
+    btn: "add to cart"
+  },
+  {
+    img: "chain5.jpg",
+    para: "Silver slim chain watch for women and girls",
+    ital: "PKR 899",
+    bold: "PKR 599",
+    btn: "add to cart"
+  },
+  {
+    img: "girl1.png",
+    para: "Classic mehroon stitched leather watch",
+    ital: "PKR 1,099",
+    bold: "PKR 850",
+    btn: "add to cart"
+  },
+  {
+    img: "girl12.jpeg",
+    para: "Silver stainless-steel women's watch",
+    ital: "PKR 1,499",
+    bold: "PKR 999",
+    btn: "add to cart"
+  },
+  {
+    img: "girl10.webp",
+    para: "Minimal pink bracelet watch for women",
+    ital: "PKR 999",
+    bold: "PKR 649",
+    btn: "add to cart"
+  },
+  {
+    img: "girl19.png",
+    para: "Modern sky-blue women’s watch with simple dial",
+    ital: "PKR 1,299",
+    bold: "PKR 799",
+    btn: "add to cart"
+  },
+  {
+    img: "girl15.webp",
+    para: "Modern rose-gold strap watch with light pink shade",
+    ital: "PKR 1,699",
+    bold: "PKR 899",
+    btn: "add to cart"
+  },
+  {
+    img: "girl20.png",
+    para: "Minimal black leather ladies watch, silver case",
+    ital: "PKR 2,200",
+    bold: "PKR 1,799",
+    btn: "add to cart"
+  },
+  {
+    img: "girl16.webp",
+    para: "Shiny diamond pattern women’s chain watch",
+    ital: "PKR 999",
+    bold: "PKR 699",
+    btn: "add to cart"
+  }
+];
+
+  document.addEventListener("DOMContentLoaded",function(){
+  let wom="";
+  womensProducts.forEach(w => {
+    wom+=`
+     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+         <div class="col">
+          <img src="images1/${w.img}" alt="">
+          <p>${w.para}</p>
+          <i>${w.ital}</i>
+          <b>${w.bold}</b>
+          <button style="text-transform: capitalize;" class="btn text-dark btn-outline-primary fw-bolder d-block mx-auto mt-3 ">${w.btn}</button>
+       </div>
+    </div>
+    `
+  });
+    let rowWomen=document.getElementById("women").innerHTML=wom;
+});
+</script>
+</body>
+</html>
